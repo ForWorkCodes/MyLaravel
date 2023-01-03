@@ -730,17 +730,17 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.ml-3 {
-  margin-left: 0.75rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
 }
 .mb-20 {
   margin-bottom: 5rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
 }
 .-ml-px {
   margin-left: -1px;
@@ -750,6 +750,9 @@ select {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -787,6 +790,12 @@ select {
 .h-20 {
   height: 5rem;
 }
+.h-screen {
+  height: 100vh;
+}
+.h-12 {
+  height: 3rem;
+}
 .h-5 {
   height: 1.25rem;
 }
@@ -804,6 +813,9 @@ select {
 }
 .w-full {
   width: 100%;
+}
+.w-96 {
+  width: 24rem;
 }
 .w-5 {
   width: 1.25rem;
@@ -859,6 +871,16 @@ select {
 .gap-10 {
   gap: 2.5rem;
 }
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
 .self-center {
   align-self: center;
 }
@@ -902,6 +924,14 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+.border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
 .border-transparent {
   border-color: transparent;
 }
@@ -921,6 +951,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -931,6 +965,12 @@ select {
 }
 .fill-current {
   fill: currentColor;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .p-4 {
   padding: 1rem;
@@ -965,6 +1005,14 @@ select {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -995,6 +1043,10 @@ select {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1044,17 +1096,21 @@ select {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.text-indigo-600 {
+.text-red-500 {
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
-.text-green-600 {
+.text-blue-900 {
   --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 .text-red-600 {
   --tw-text-opacity: 1;
@@ -1103,6 +1159,11 @@ select {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1135,13 +1196,13 @@ select {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hover\:bg-blue-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-.hover\:text-gray-900:hover {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
