@@ -9,13 +9,13 @@
                 @csrf
 
                 @error('email')<p class="text-red-500">{{ $message }}</p>@enderror
-                <input name="email" type="text" class="w-full h-12 border border-red-500 rounded px-3 @error('email') border-red-800 @enderror" placeholder="Email" />
+                <input name="email" type="text" class="w-full h-12 border rounded px-3 @error('email') border-red-800 @enderror" placeholder="Email" />
 
                 @error('password')<p class="text-red-500">{{ $message }}</p>@enderror
                 <input name="password" type="password" class="w-full h-12 border border-gray-800 rounded px-3 @error('password') border-red-800 @enderror" placeholder="Пароль" />
 
                 <div>
-                    <a href="#" class="font-medium text-blue-900 hover:bg-blue-300 rounded-md p-2">Забыли пароль?</a>
+                    <a href="{{ route('forgot') }}" class="font-medium text-blue-900 hover:bg-blue-300 rounded-md p-2">Забыли пароль?</a>
                 </div>
 
                 <div>
